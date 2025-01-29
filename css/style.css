@@ -1,0 +1,100 @@
+body {
+    background: linear-gradient(to right, #000000 50%, #808080 100%);
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
+}
+
+.musicflix {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
+    max-width: 1024px;
+}
+
+.musicflix_content {
+    padding: 20px;   
+}
+
+.musicflix_content--title {
+    font-size: 48px;
+    font-weight: 600;
+    color: #62CD5D;
+}
+
+.musicflix_content--desc {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.musicflix_content .musicflix_content--form input {
+    margin-top: 20px;
+    width: 100%;
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.musicflix_content .musicflix_content--form input::placeholder {
+    font-size: 12px;
+}
+
+.musicflix_content .musicflix_content--form input:focus {
+    border-color: #62CD5D;
+    box-shadow: 0 0 10px #62CD5D, 0 0 20px #62CD5D, 0 0 40px #62CD5D;
+}
+
+.musicflix_content--btn {
+    font-size: 18px;
+    margin-top: 20px;
+    width: 100%;
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+    outline: none;
+    background-color: #62CD5D;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.musicflix_lyrics {
+    color: #ffffff;
+    padding: 20px;
+    max-width: 500px;
+}
+
+.musicflix_lyrics pre{
+    overflow-y: scroll;
+    font-size: 18px;
+    max-height: 350px;
+}
+
+.musicflix_lyrics pre::-webkit-scrollbar{
+    width: 5px;
+}
+
+@media (min-width: 768px) {
+    .musicflix {
+        flex-direction: row;
+    }
+
+    .musicflix_content--title {
+        font-size: 72px;
+        font-weight: 600;
+        color: #62CD5D;
+    }
+
+    .musicflix_content--desc {
+        font-size: 26px;
+        font-weight: 600;
+        color: #ffffff;
+    }
+}

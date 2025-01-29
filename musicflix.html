@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musicflix</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+<body>
+    <section class="musicflix">
+        <div class="musicflix_content">
+           <h1 class="musicflix_content--title">Musicflix</h1>
+           <p class="musicflix_content--desc">Maior app de letras do mundo</p>
+           <form class="musicflix_content--form">
+                <input type="text" id="artist" placeholder="Escolha seu Artista favorito">
+                <input type="text" id="song" placeholder="Escolha sua Musica favorita">
+                <button class="musicflix_content--btn" type="submit">Buscar letra</button>
+            </form>
+        </div>
+        <div class="musicflix_lyrics"><pre id="lyrics"></pre></div>
+    </section>
+    <script src="js/search.js"></script>
+</body>
+</html>
